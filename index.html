@@ -98,11 +98,11 @@
 
 	<script>
 		function google() {
-			window.open("https://lifehacker.ru/digital-camera/");
+			window.open("http://www.artem-kashkanov.ru/article100.html?");
 		}
 		function report44() {
 			var WinPrint = null;
-  WinPrint = window.open('','','left=0,top=0,width=400,height=200,toolbar=0,scrollbars=1,status=0');
+  WinPrint = window.open('','','left=0,top=0,width=400,height=400,toolbar=0,scrollbars=1,status=0');
   if(WinPrint != null)
   {
   
@@ -114,18 +114,126 @@
   WinPrint.document.write('<strong>основывается на Ваших предпочтениях: </strong><br>');
   WinPrint.document.write('<strong>по деньгам: до </strong>'+document.getElementById("Deng").value+' рублей<br>');
   WinPrint.document.write('<strong>по тому что Вы хотите снимать: </strong>'+document.getElementById("Styl").value+'<br>');
-  WinPrint.document.write('<strong>по работе с фотографиями :</strong>'+document.getElementById("Proc").value+'<br>');
-  WinPrint.document.write('<strong>для чего Вы снимаете :</strong>'+document.getElementById("Pro4").value+'<br>');
-  WinPrint.document.write('<strong>куда будете публиковать фото </strong>'+document.getElementById("Nets").value+'<br>');
-  WinPrint.document.write('<strong>габаритам </strong>'+document.getElementById("Size").value+'<br>');
-  WinPrint.document.write('<strong>эстетическое восприятие </strong>'+document.getElementById("Este").value+'<br>');
-  WinPrint.document.write('<strong>имеете ли Вы опыт фотографирования </strong>'+document.getElementById("Foto").value+'<br><br><br><br>'); 
+  WinPrint.document.write('<strong>по работе с фотографиями:</strong>'+document.getElementById("Proc").value+'<br>');
+  WinPrint.document.write('<strong>для чего Вы снимаете: </strong>'+document.getElementById("Pro4").value+'<br>');
+  WinPrint.document.write('<strong>куда будете публиковать фото: </strong>'+document.getElementById("Nets").value+'<br>');
+  WinPrint.document.write('<strong>габаритам: </strong>'+document.getElementById("Size").value+'<br>');
+  WinPrint.document.write('<strong>эстетическое восприятие: </strong>'+document.getElementById("Este").value+'<br>');
+  WinPrint.document.write('<strong>имеете ли Вы опыт фотографирования: </strong>'+document.getElementById("Foto").value+'<br><br><br><br>'); 
   
   WinPrint.document.write('<strong>Мы рекомендуем для Вас модель: </strong><br>');
   
-  if (document.getElementById("Deng").value < 10000) { WinPrint.document.write('<strong>смартфон Asus</strong><br>'); }
+  if ((document.getElementById("Deng").value <= 10000))
+  { WinPrint.document.write('<strong>смартфон Asus</strong><br>'); 
+  }
   
-  if (document.getElementById("Deng").value > 100000) { WinPrint.document.write('<strong>Fujifilm XT2</strong><br>'); }
+  
+  
+  if ((document.getElementById("Deng").value > 10000) && (document.getElementById("Deng").value <= 20000))
+  { 
+  WinPrint.document.write('<strong>Canon EOS 4000D Kit 18-55DC III - 18 тыс рублей</strong><br>'); 
+  
+  }
+  
+  if ((document.getElementById("Deng").value > 20000) && (document.getElementById("Deng").value <= 30000))
+  { 
+   WinPrint.document.write('<strong>Nikon D3400 KIT 18-55 -  26 тыс рублей</strong><br>'); 
+  
+   WinPrint.document.write('<strong>Fujifilm XF10 -  30 тыс рублей</strong><br>'); 
+  }
+  
+  if ((document.getElementById("Deng").value > 30000) && (document.getElementById("Deng").value <= 40000))
+  { 
+  WinPrint.document.write('<strong>Olympus OM-D E-M10 II 14-42mm Pancake Zoom Kit - 34 тыс рублей</strong><br>'); 
+  
+  }
+  
+  
+  
+  
+  if ((document.getElementById("Deng").value > 40000) && (document.getElementById("Deng").value <= 50000))
+  { 
+  
+  WinPrint.document.write('<strong>Ricoh GR2 - 42 тыс рублей</strong><br>'); 
+  
+  WinPrint.document.write('<strong>Fujifilm X-T100 Kit 15-45 - 42 тыс рублей</strong><br>'); 
+  
+  }
+  
+  
+  
+  
+  if ((document.getElementById("Deng").value > 50000) && (document.getElementById("Deng").value <= 60000))
+  { 
+  WinPrint.document.write('<strong>Fujifilm X-T20 Kit 15-45 - 54 тыс рублей</strong><br>'); 
+  
+  }
+  
+  if ((document.getElementById("Deng").value > 60000) && (document.getElementById("Deng").value <= 70000))
+  { 
+  WinPrint.document.write('<strong>Sony Cyber-shot DSC-RX100M4 - 64 тыс рублей</strong><br>'); 
+  
+  WinPrint.document.write('<strong>Fujifilm XT20 KIT 18-55 - 68 тыс рублей</strong><br>'); 
+  
+  }
+  
+  if ((document.getElementById("Deng").value > 70000) && (document.getElementById("Deng").value <= 80000))
+  { 
+  WinPrint.document.write('<strong>Sony Alpha A7 Kit FE 28-70/3.5-5.6 OSS -  74 тыс рублей</strong><br>'); 
+  
+  WinPrint.document.write('<strong>Olympus PEN-F Kit 14-42 -  74 тыс рублей</strong><br>'); 
+  
+  }
+  
+  
+  
+  if ((document.getElementById("Deng").value > 80000) && (document.getElementById("Deng").value <= 90000))
+  { 
+  WinPrint.document.write('<strong>Nikon D610 Kit 24-85VR - 86 тыс рублей</strong><br>');
+  
+  WinPrint.document.write('<strong>Fujifilm X100F - 88 тыс рублей</strong><br>'); 
+   
+  }
+  
+  
+ 
+ 
+  
+  
+  
+  if ((document.getElementById("Deng").value > 90000) && (document.getElementById("Deng").value <= 110000))
+  { 
+  WinPrint.document.write('<strong>Fujifilm XT2 KIT 18-55 - 92 тыс рублей</strong><br>');  
+  
+  WinPrint.document.write('<strong>Olympus Pen-F Kit Black 17mm f/1.8 - 108 тыс рублей</strong><br>'); 
+  }
+  
+  
+  if ((document.getElementById("Deng").value > 120000) && (document.getElementById("Deng").value <= 160000))
+  { 
+  WinPrint.document.write('<strong>Fujifilm X-T3 KIT XF 18-55MM F2.8-4 - 126 тыс рублей</strong><br>'); 
+
+  }
+  
+ if ((document.getElementById("Deng").value > 160000) && (document.getElementById("Deng").value <= 200000))
+  { 
+  WinPrint.document.write('<strong>FujiFilm X-T3 + XF16-55F2.8 R LM WR -  162 тыс рублей</strong><br>'); 
+  
+  }
+  
+  if ((document.getElementById("Deng").value > 200000) && (document.getElementById("Deng").value <= 340000))
+  { 
+  WinPrint.document.write('<strong>PENTAX K-1 Mark II Kit 24-70  - 214 тыс рублей</strong><br>'); 
+  
+  WinPrint.document.write('<strong>LEICA Q (TYP 116)  - 294 тыс рублей</strong><br>'); 
+  
+  
+  
+  WinPrint.document.write('<strong>Nikon Z7 Kit 24-70/4  - 304 тыс рублей</strong><br>');
+  }
+  
+  if ((document.getElementById("Deng").value > 340000))
+  {  WinPrint.document.write('<strong>FujiFilm GFX 50R Kit GF 63mm F 2.8 R WR - 348 тыс рублей</strong><br>');   }
   /*WinPrint.document.write('<input name="name2" type="text" id= "name2" maxlength="64" style="font-weight:bold; padding-left:3px; width:300px" size="30"><br>');
   WinPrint.document.write('<strong>Модель фотоаппарата:</strong><br>');
   WinPrint.document.write('<input name="telefon" type="text" id= "telefon" onkeydown = "javascript: return(event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 || (event.keyCode >= 48 && event.keyCode <= 57) || (event.keyCode >= 35 && event.keyCode <= 40) || (event.keyCode >= 96 && event.keyCode <= 105))" maxlength="11" style="font-weight:bold; padding-left:3px; width:300px" size="30"><br>');
